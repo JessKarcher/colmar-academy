@@ -1,0 +1,86 @@
+/* Universal Styles */
+
+html {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+
+.main-content {
+  position: relative;
+  top: 4rem; /* Fixed header offset */
+}
+
+.image-container {
+  overflow: hidden;
+}
+
+.image-container img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  background-color: white;
+  height: 4rem;
+}
+
+header .content {
+  display: flex;
+  padding: 1.5rem;
+  justify-content: space-between;
+}
+
+header .logo {
+  display: flex;
+}
+
+#name a {
+  text-decoration: none;
+  color: #8A97A8;
+  font-size: 1.5rem;
+}
+
+#colmar {
+  color: #01161E;
+}
+
+header nav ul {
+  display: flex;
+}
+
+nav li {
+  padding-left: 1rem;
+}
+
+nav a {
+  color: #01161E;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
+
+header .mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 470px) {
+  header .desktop {
+    display: none;
+  }
+
+  header .content {
+    display: none;
+  }
+
+  header .mobile {
+    display: block;
+    width: 100%;
+  }
+
+  header .mobile ul {
+
+  }
