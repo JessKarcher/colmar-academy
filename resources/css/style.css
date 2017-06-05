@@ -8,6 +8,7 @@ html {
 .main-content {
   position: relative;
   top: 4rem; /* Fixed header offset */
+  margin-left: 1.5
 }
 
 .image-container {
@@ -17,6 +18,30 @@ html {
 .image-container img {
   display: block;
   max-width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+}
+
+.container:nth-child(2n+1) {
+  background-color: #EEF9ED;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.container a {
+  text-decoration: none;
+}
+
+h1 {
+  color: #01161E;
+  font-size: 2rem;
 }
 
 /* Header */
@@ -88,3 +113,10 @@ header .mobile {
   header .mobile li {
     padding: 0;
   }
+
+/* Main Content */
+
+.container .image-container {
+    width: 60%;
+    height: auto;
+}
